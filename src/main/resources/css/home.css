@@ -1,0 +1,94 @@
+.root {
+    -fx-font-family: 'Segoe UI', sans-serif;
+    -fx-background-color: #f0f0f0;
+}
+
+.top-container, .left-container, .center-container {
+    -fx-padding: 20;
+    -fx-background-color: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0, 0, 0);
+}
+
+.header {
+    -fx-font-size: 24;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+.label-bold {
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+    -fx-text-fill: #090808;
+}
+
+.label-info {
+    -fx-font-size: 16;
+    -fx-text-fill: #090808;
+}
+
+.favourites-list {
+    -fx-border-color: #bdc3c7;
+    -fx-background-radius: 5;
+    -fx-padding: 5;
+}
+
+.chat-area {
+    -fx-background-color: #ecf0f1;
+    -fx-border-color: #bdc3c7;
+    -fx-background-radius: 0; /* No rounded background */
+    -fx-padding: 10;
+    -fx-font-size: 14;
+    -fx-text-fill: #2c3e50;
+}
+
+.question-field {
+    -fx-background-color: #ecf0f1;
+    -fx-border-color: #bdc3c7;
+    -fx-background-radius: 0; /* No rounded background */
+    -fx-padding: 10;
+    -fx-font-size: 14;
+    -fx-text-fill: #2c3e50;
+}
+
+.question-field:focused {
+    -fx-border-color: #3498db;
+}
+
+.top-container {
+    -fx-background-color: rgba(46, 167, 204, 0.89);
+}
+
+.top-container .header {
+    -fx-text-fill: #090808;
+}
+
+.left-container {
+    -fx-background-color: rgba(52, 152, 219, 0.94);
+}
+
+.left-container .header {
+    -fx-text-fill: #ffffff;
+}
+
+
+.button {
+    -fx-background-color: #2ecc71;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-background-radius: 0; /* No rounded corners */
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #27ae60;
+}
+
+.list-cell {
+    -fx-padding: 10;
+}
+
+.list-cell:hover {
+    -fx-background-color: #bdc3c7;
+}

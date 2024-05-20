@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane stylesheets="@../css/home.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="zw.co.els.englishlearningsystem.controller.HomeController">
+<top>
+    <VBox prefHeight="147.0" prefWidth="882.0" spacing="10" styleClass="top-container">
+        <children>
+            <Label prefHeight="30.0" prefWidth="416.0" styleClass="header" text="AI Powered English Learning System" />
+            <HBox spacing="20">
+                <children>
+                    <Label prefHeight="19.0" prefWidth="109.0" styleClass="label-bold" text="Logged in as:" />
+                    <Label fx:id="fullNameLabel" styleClass="label-info" />
+                </children>
+            </HBox>
+            <HBox spacing="20">
+                <children>
+                    <Label prefHeight="19.0" prefWidth="113.0" styleClass="label-bold" text="User Number:" />
+                    <Label fx:id="phoneNumberLabel" styleClass="label-info" />
+                </children>
+            </HBox>
+        </children>
+    </VBox>
+</top>
+<left>
+    <VBox spacing="10" styleClass="left-container">
+        <children>
+            <Label styleClass="header" text="My Favourites" />
+            <ListView fx:id="favouritesList" styleClass="favourites-list" />
+        </children>
+    </VBox>
+</left>
+<center>
+    <VBox prefHeight="488.0" prefWidth="594.0" spacing="10" styleClass="center-container">
+        <children>
+            <TextArea fx:id="chatArea" editable="false" prefHeight="400" styleClass="chat-area" />
+            <TextField fx:id="questionField" onAction="#handleSendQuestion" promptText="Ask a question..." styleClass="question-field" />
+        </children>
+    </VBox>
+</center>
+</BorderPane>
