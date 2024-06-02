@@ -1,6 +1,5 @@
 package zw.co.els.englishlearningsystem.service;
 
-import org.springframework.beans.factory.annotation.Value;
 import zw.co.els.englishlearningsystem.utils.Config;
 
 import java.io.IOException;
