@@ -28,6 +28,7 @@
         <children>
             <Label styleClass="header" text="My Favourites" />
             <ListView fx:id="favouritesList" styleClass="favourites-list" />
+            <Button text="Logout" onAction="#handleLogout"/>
         </children>
     </VBox>
 </left>

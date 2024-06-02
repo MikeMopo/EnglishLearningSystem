@@ -12,6 +12,13 @@ target/
 *.iml
 *.ipr
 
+### Properties ###
+# Ignore application.properties
+/src/main/resources/application.properties
+
+# Allow other profile-specific properties files
+!/src/main/resources/application-*.properties
+
 ### Eclipse ###
 .apt_generated
 .classpath

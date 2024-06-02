@@ -25,6 +25,12 @@ public class LoginController {
         String username = usernameField.getText();
         String password = passwordField.getText();
 
+        if (username.isEmpty() || password.isEmpty()) {
+            showAlert(Alert.AlertType.ERROR, "Login Failed!", "Please enter username and password");
+            return;
+        }
+        System.out.println("Username: " + username + ", Password: " + password);
+
         var isValid = DatabaseUtil.validateUser(username, password);
         if (isValid) {
             User user = DatabaseUtil.getValidatedUser(username, password);
