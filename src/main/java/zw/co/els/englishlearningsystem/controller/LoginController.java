@@ -12,8 +12,6 @@ import zw.co.els.englishlearningsystem.model.User;
 import zw.co.els.englishlearningsystem.utils.DatabaseUtil;
 
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
 
 public class LoginController {
     @FXML

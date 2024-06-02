@@ -1,18 +1,14 @@
 package zw.co.els.englishlearningsystem.utils;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import zw.co.els.englishlearningsystem.model.User;
-import org.springframework.beans.factory.annotation.Value;
-import javax.annotation.PostConstruct;
 
 import java.sql.*;
-import java.util.Properties;
 
 @Service
 public class DatabaseUtil {
 
-    private static Config config = Config.getInstance();
+    private static final Config config = Config.getInstance();
     public static String URL = config.getProperty("db.url");
     public static String USER = config.getProperty("db.user");
     public static String PASSWORD = config.getProperty("db.password");

@@ -12,9 +12,9 @@ import java.net.http.HttpResponse;
 
 public class OpenAIClient {
 
-    private static Config config = Config.getInstance();
-    private static String apiKey = config.getProperty("openai.apiKey");
-    private static String apiEndpoint = config.getProperty("openai.apiEndpoint");
+    private static final Config config = Config.getInstance();
+    private static final String apiKey = config.getProperty("openai.apiKey");
+    private static final String apiEndpoint = config.getProperty("openai.apiEndpoint");
     public static String getAIResponse(String question) throws IOException, URISyntaxException, InterruptedException {
 
         var jsonPayload = "{\"contents\":[{\"parts\":[{\"text\":\"" + question + "\"}]}]}";

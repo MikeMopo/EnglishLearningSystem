@@ -5,7 +5,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.stage.Stage;
-import zw.co.els.englishlearningsystem.EnglishLearningSystemApplication;
 
 public class LogoutController {
     @FXML

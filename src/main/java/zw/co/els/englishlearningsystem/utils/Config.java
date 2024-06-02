@@ -1,15 +1,10 @@
 package zw.co.els.englishlearningsystem.utils;
 
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
-
-import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 public class Config {
 
-    private static Config instance;
-    private Properties properties = new Properties();
+    private final Properties properties = new Properties();
     public Config() {
         loadProperties();
     }
@@ -28,12 +23,11 @@ public class Config {
         return properties.getProperty(key);
     }
 
+    private static final class InstanceHolder {
+        private static final Config instance = new Config();
+    }
+
     public static Config getInstance() {
-        if (instance == null)synchronized (Config.class) {
-            if (instance == null) {
-                instance = new Config();
-            }
-        }
-        return instance;
+        return InstanceHolder.instance;
     }
 }

@@ -5,13 +5,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import zw.co.els.englishlearningsystem.utils.Config;
 
 import java.io.IOException;
 
 public class EnglishLearningSystemApplication extends Application {
 
-    private Stage primaryStage;
     @Override
     public void start(Stage primaryStage) {
         try {
@@ -30,16 +28,8 @@ public class EnglishLearningSystemApplication extends Application {
             e.printStackTrace();
         }
     }
-    public Stage getPrimaryStage() {
-        return primaryStage;
-    }
 
     public static void main(String[] args) {
-////        Config.inConfig();
-////        System.out.println("-------------------------------------------------------------");
-//        Config inConfig = new Config();
-////        inConfig.inConfig2();
-//        inConfig.inConfig3();
         launch(args);
     }
 }
